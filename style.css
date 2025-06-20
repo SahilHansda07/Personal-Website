@@ -1,0 +1,174 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.top {
+    background-color: #e4f9f5;
+    color: #66bfbf;
+    height: 75vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-me>h1,h2{
+    font-family: "Montserrat", sans-serif;
+}
+
+.logo {
+    padding-left: 0px;
+    align-self: flex-start;
+}
+
+.about-me {
+    align-self: center;
+    margin-right: 70vh;
+}
+
+.about-me>img {
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    object-fit: fill;
+}
+
+.about-me>p {
+    font-family: "Merriweather",
+        serif;
+}
+
+.middle {
+    text-align: center;
+    margin-top: 4vh;
+}
+
+.middle>h2 {
+    color: #66bfbf;
+    font-family: "Montserrat",
+        sans-serif;
+}
+
+.middle h3 {
+    color: #66bfbf;
+    font-family: "Merriweather",
+        serif;
+}
+
+.middle p {
+    font-family: "Merriweather",
+        serif;
+        font-size: 0.9rem;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: repeat(1, 1fr);
+    width: 50%;
+    row-gap: 2rem;
+    text-align: left;
+    margin: 90px auto 0 auto;
+}
+
+.parent p {
+    margin-top: 2vh;
+}
+
+.bottom {
+    height: 38vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.bottom>h2 {
+    margin-top: 3rem;
+    color: #66bfbf;
+    font-family: "Montserrat",
+        sans-serif;
+}
+
+.bottom p{
+    font-family: "Merriweather",
+        serif;
+}
+
+.bottom button {
+    background-color: #11cdd4;
+    height: 5vh;
+    width: 14vh;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    color: white;
+}
+
+.bottom button:hover {
+    background-color: #11999e;
+    cursor: pointer;
+}
+
+.footer {
+    background-color: #66bfbf;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.footer a {
+    color: #e4f9f5;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-family: "Merriweather",
+            serif;
+}
+
+.footer p {
+    font-family: "Montserrat",sans-serif;
+    font-size: 0.9rem;
+}
+
+.footer a:hover {
+    color: #11999e;
+}
+
+@media (max-width:600px) {
+    .top img {
+        margin-right: -10vh;
+    }
+
+    .middle {
+        margin-top: 10vh;
+    }
+
+    .parent {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5vh;
+        margin-right: 21vh;
+        width: 100%;
+    }
+
+    .parent img {
+        width: 110%;
+    }
+
+    .one {
+        width: 90%;
+    }
+
+    .bottom {
+        margin-top: 10vh;
+    }
+
+    .bottom p {
+        text-align: center;
+    }
+}
